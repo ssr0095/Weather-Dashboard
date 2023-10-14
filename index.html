@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Weather Dashboard</h1>
+        <main class="container">
+            
+            <section class="input_box">
+                <h2>Enter a City Name</h2>
+                <input type="text" id="city">
+                <button class="btn" id="search_btn">Search</button>
+                <div class="separetor"></div>
+                <button class="btn" id="current_location_btn" >Use Current Location </button>
+            </section>
+
+
+            <section class="current_details">
+                <div class="details">
+                    <h2>City</h2>
+                    <p>Temperature: --/--</p>
+                    <p>Wind       : --/--</p>
+                    <p>Humidity   : --/--</p>
+                </div>
+                <div class="icon">
+                    <img src="./images/icon1.png" alt="weather_icon" >
+                    <p>Sunny</p>
+                </div>
+            </section>
+
+
+            <section id="forecast">
+                <h2>4 Day Forecast</h2>
+                <div class="forecast_box">
+                        <ul class="forecast">
+                            <li>
+                                <h3>(Date)</h3>
+                                <div class="ficon">
+                                    <img src="./images/icon.png" alt="weather_icon" >
+                                </div>
+                                <p>Temp    : --/--</p>
+                                <p>Wind    : --/--</p>
+                                <p>Humidity: --/--</p>
+                            </li>
+                            <li>
+                                <h3>(Date)</h3>
+                                <div class="ficon">
+                                    <img src="./images/icon.png" alt="weather_icon" >
+                                </div>
+                                <p>Temp    : --/--</p>
+                                <p>Wind    : --/--</p>
+                                <p>Humidity: --/--</p>
+                            </li>
+                            <li>
+                                <h3>(Date)</h3>
+                                <div class="ficon">
+                                    <img src="./images/icon.png" alt="weather_icon" >
+                                </div>
+                                <p>Temp    : --/--</p>
+                                <p>Wind    : --/--</p>
+                                <p>Humidity: --/--</p>
+                            </li>
+                            <li>
+                                <h3>(Date)</h3>
+                                <div class="ficon">
+                                    <img src="./images/icon.png" alt="weather_icon" >
+                                </div>
+                                <p>Temp    : --/--</p>
+                                <p>Wind    : --/--</p>
+                                <p>Humidity: --/--</p>
+                            </li>   
+                        </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
