@@ -14,8 +14,6 @@ const getCityCoordinates = () => {                              // getting locat
     fetch(LOCATION_API_URL)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-
         const name= data.name;
         const lat= data.coord.lat;
         const lon = data.coord.lat;
@@ -58,14 +56,13 @@ const getWeatherDetails = (name, lat, lon) => {                         // getti
     fetch(WEATHER_API_URL)
     .then(res => res.json())
     .then(data => {
-console.log(data)
         const uniqeForcasteDays = [];
         const fiveForcaste = data.list.filter(forcaste => {
             const forcastDate = new Date(forcaste.dt_txt).getDate();
             if(!uniqeForcasteDays.includes(forcastDate)){
                 return uniqeForcasteDays.push(forcastDate)
             }
-        })                      //.............?
+        })
         
         cityInput.value = "";
         currentLocDiv.innerHTML = "";
